@@ -1,0 +1,111 @@
+* {
+margin: 0;
+font-family: "MuseoSans";
+}
+
+@font-face {
+font-family: "IntroBold";
+src: url("fonts/IntroBold.otf");
+}
+
+@font-face {
+font-family: "MuseoSans";
+src: url("fonts/MuseoSans.otf");
+}
+
+@media only screen and (min-device-width: 481px) {
+    .small {
+        visibility: hidden;
+    }
+    .full {
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .full {
+        visibility: hidden;
+    }
+    .small {
+        visibility: visible;
+    }
+}
+
+h1, h3 {    
+    font-family: "IntroBold";
+}
+
+.nav {
+    height: 5rem;
+    text-align: right;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    padding: 0 3rem;
+}
+
+.logo {
+    width: 20%;
+}
+
+.full, .small {
+    float: left;
+    height: 5rem;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #b39c2e;
+    font-size: 1.25rem;
+    margin: 1rem;
+    vertical-align: middle;
+    line-height: 5rem;
+}
+
+.heading {
+    height: 25rem;
+    background-image: url(img/splash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: local;
+    background-position: 45% 60%;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: gray;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+}
+
+.feature {
+    height: 15rem;
+    text-align: justify;
+    background-image: url(img/chakra.png);
+    background-size: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    border-right: 2px solid dimgray;
+}
+
+.feature > h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: dimgray;
+    margin: 3rem 0 5rem 0;
+
+}
+
+.features :last-child {
+    border-right: none;
+}
